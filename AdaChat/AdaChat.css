@@ -76,6 +76,10 @@
 	    border-top-right-radius: 70px; 
 	    border-bottom-left-radius: 70px;
 	}
+    .login:active, .signup:active {
+        color: white;
+        text-decoration: none;
+    }
 	@media screen and (max-width: 1000px) {
 		#adaH {
 			display: none;

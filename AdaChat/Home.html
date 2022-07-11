@@ -35,7 +35,7 @@
                 $.each(jsonKeys, function (k, v) {
                     stringifiedKey = JSON.stringify(tabData[v]);
                     tabName = JSON.parse(stringifiedKey).cName;
-                    $('.tabcont').append('<a href=chats/' + tabName.replace(" ", "") + '.html><div class="col-sm-4"><div class="tab">' + tabName + '</div></div></a>');
+                    $('.tabcont').append('<a href=chats/' + tabName + '/' + tabName + '.html><div class="col-sm-4"><div class="tab">' + tabName + '</div></div></a>');
                 })
             })
         });

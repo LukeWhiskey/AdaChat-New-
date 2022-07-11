@@ -1,0 +1,107 @@
+﻿<html>
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="AdaChat.css">
+    <link rel="stylesheet" href="SLpages.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        #ada {
+            margin-bottom: 40px;
+        }
+        #bot {
+            margin-top: 5.75vh;
+            font-size: 20px;
+        }
+        #smoltext {
+            font-size: 16px;
+        }
+    </style>
+    <style>
+        @media screen and (max-width: 1200px) {
+            #container {
+                background-image: url(CardBack.png);
+            }
+            #bot {
+                margin-top: 8.2875vh;
+                font-size: 46px;
+            }
+            .form-check d-flex justify-content-center mb-5 {
+                text-align: center; 
+            }
+        }
+    </style>
+</head>
+<body style="background-color: rgb(0, 0, 30);">
+    <cont>
+        <div class="headCont">
+            <div class="bar">
+                <a class="login" href="Home.html">Home</a>
+                <a class="signup" href="Signup.html">Signup</a>
+            </div>
+            <h1 class="header" id="AdaH"></h1>
+            <p class="subHead" id="AdaS"></p>
+        </div>
+        <section class="vh-100" id="container" style="background-color: transparent;">
+            <div class="container h-100" style="background-color: transparent;">
+                <div class="row d-flex justify-content-center align-items-center h-100" style="background-color: transparent;">
+                    <div class="col-lg-12 col-xl-11" style="background-color: transparent;">
+                        <div class="card text-black" style="border-radius: 25px; background-color: transparent;">
+                            <div class="card-body p-md-5" style="background-color: transparent;">
+                                <div class="row justify-content-center" id="text" style="background-color: transparent;">
+                                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1" style="background-color: transparent;">
+                                        <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4" id="labels">Login</p>
+                                        <form class="mx-1 mx-md-4" style="background-color: transparent;">
+                                            <div class="d-flex flex-row align-items-center mb-4" id="bot" style="background-color: transparent;">
+                                                <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                                <div class="form-outline flex-fill mb-0" style="background-color: transparent;">
+                                                    <label class="form-label" for="form3Example1c" id="user">Email or User Name</label>
+                                                    <input type="text" id="form3Example1c" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-row align-items-center mb-4" id="bot" style="background-color: transparent;">
+                                                <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                                <div class="form-outline flex-fill mb-0" style="background-color: transparent;">
+                                                    <label class="form-label" for="form3Example4c" id="password">Password</label>
+                                                    <input type="password" id="form3Example4c" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check d-flex justify-content-center mb-5" id="bot" style="background-color: transparent; margin-left: 30px;">
+                                                <input type="checkbox" id="cb" value="" />
+                                                <label class="form-check-label" for="form2Example3" id="smoltext">
+                                                    Remember Me
+                                                </label>
+                                            </div>
+
+                                            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4" id="login" style="background-color: transparent; padding-bottom: 25px;">
+                                                <button type="button" class="btn btn-primary btn-lg" id="reg">Login</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                                        <img src="CardBack.png" class="img-fluid" id="ada" alt="Sample image" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-light text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" id="footer">
+                © 2022 Copyright:
+                <a class="text-dark" href="">Copyright Notice</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </cont>
+    <script src="AdaChat.js"></script>
+</body>
+</html>

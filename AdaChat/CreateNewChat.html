@@ -137,7 +137,7 @@
                     jsonKeys = Object.keys(data);
                     $.each(jsonKeys, function (k, v) {
                         stringifiedKey = JSON.stringify(data[v]);
-                        nameCheck = JSON.parse(stringifiedKey).cName;
+                        nameCheck = JSON.parse(stringifiedKey).chatName;
                         knownNames.push(nameCheck);
                     });
                     if (knownNames.includes(name)) {

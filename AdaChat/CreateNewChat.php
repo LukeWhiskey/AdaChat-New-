@@ -7,12 +7,12 @@
 	$data = json_decode($jsonString, true);
 
 	$newName1 = array(
-		'cName' => $cName,
+		'chatName' => $cName,
 		'desc' => $desc,
 		'nsfw' => $nsfw
 	);
 	$newName2 = array(
-		count($data)+1 => $newName1
+		$cName => $newName1
 	);
 
 	$newPackage = $data + $newName2;

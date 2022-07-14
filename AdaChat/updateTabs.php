@@ -16,3 +16,10 @@
 	$newJsonString = json_encode($decodeJson);
 	file_put_contents("Tabs.json", $newJsonString);
 ?>
+<?php
+	foreach(glob("chats/*") as $tabs) {
+		$w = file_get_contents("GenericTab.html");
+		$r = str_replace("chats/", "", $tabs);
+		file_put_contents($tabs. "/". $r. ".html", $w);
+	}
+?>

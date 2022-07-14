@@ -3,7 +3,6 @@
 	$desc = $_POST['desc']; 
 	$nsfw = isset($_POST['nsfw']) ? "True" : "False";	
 	
-	////// read cName input
 	if(!is_dir('chats/'. $cName)) {
 		mkdir('chats/'. $cName);
 	}

@@ -66,9 +66,7 @@ $(document).ready(function () {
             url: phpFile,
             method: 'POST',
             data: { msg: msg },
-            success: function () {
-            },
-            error: function (xhr, status, error) {
+            error: function () {
                 alert("Failed sending message to php directory...");
             }
         });

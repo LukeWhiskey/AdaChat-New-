@@ -155,16 +155,17 @@
                 }).fail(function () {
                     alert("failed contacting Tabs.json...");
                 });
-            }, 100);
+            }, 1);
 
             $('#reg').click(function () {
-                if ($('#nameCheck').val() == "") {
-                    $('#nameCheck').html("Chat Name Required");
-                }
-                else if ($('#nameCheck').html() == error) {
+                if ($('#nameCheck').html() == error) {
+                    document.scrollingElement.scrollTop = 80;
                     return false;
                 }
-                document.scrollingElement.scrollTop = 80;
+                else if ($('#nameCheck').html() == "") {
+                    document.scrollingElement.scrollTop = 80;
+                    $('#nameCheck').html("Chat Name Required");
+                }
             });
         });
     </script>

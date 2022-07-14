@@ -55,7 +55,7 @@ $(document).ready(function () {
         else {
             return false;
         }
-    }, 1);
+    }, 100);
 
     $("#sendChat").click(function AJAXinputData() {
         var msg = $("#chat").val();

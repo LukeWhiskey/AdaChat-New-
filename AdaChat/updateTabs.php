@@ -1,5 +1,5 @@
 <?php
-	updateTabs.php;
+	updateTabs.php &
 	$chats = array();
 	foreach(glob("chats/*") as $file) {
 		$fileCut = str_replace("chats/", "", $file);
@@ -8,7 +8,7 @@
 
 	$getJson = file_get_contents("Tabs.json");
 	$decodeJson = json_decode($getJson, true);
-	foreach($decodeJson as $tabs => $chatName) {
+	foreach($decodeJson as $tabs => $parentElem) {
 		if(!in_array($tabs, $chats)) {
 			unset($decodeJson[$tabs]);
 		}

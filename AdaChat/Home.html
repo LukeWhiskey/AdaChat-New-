@@ -34,10 +34,10 @@
                 jsonKeys = Object.keys(tabData);
                 $.each(jsonKeys, function (k, v) {
                     stringifiedKey = JSON.stringify(tabData[v]);
-                    tabName = JSON.parse(stringifiedKey).cName;
+                    tabName = JSON.parse(stringifiedKey).chatName;
                     $('.tabcont').append('<a href=chats/' + tabName + '/' + tabName + '.html><div class="col-sm-4"><div class="tab">' + tabName + '</div></div></a>');
-                })
-            })
+                });
+            });
         });
     </script>
 </body>
